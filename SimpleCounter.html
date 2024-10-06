@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Document</title>
+  <style>
+    body{
+        background-color: rgb(219, 208, 177);
+    }
+    .block{
+        margin-top: 15%;
+        min-height: 50vh;
+    }
+    .countblock {
+         display: flex;
+         align-items: center;
+         justify-content: center;
+         gap: 40px;
+    }
+    #counting {
+         text-align: center;
+         margin-top: 20px;
+         font-size: 40px;
+    }
+    button{
+        border: 3px solid black;
+        border-radius: 5px;
+        width: 15%;
+        height: 40px;
+        font-size: 20px;
+        font-weight: 500;
+        background: linear-gradient(to right, rgb(187, 196, 194), rgb(112, 112, 134));   
+    }
+  </style>
+</head>
+<body>
+    <div class="block">
+    <h1 style="text-align: center; font-size: 50px;">This is a simple Counter</h1>
+    <div class="countblock">
+        <button id="Icount">Increment Counter</button>
+        <button id="Dcount">Decrement Counter</button>
+    </div>
+    <div id="counting">0</div>
+    <div style="text-align: center; margin-top: 20px;">
+        <button id="Reset">Reset</button>
+    </div>
+</div>
+    <script src="SimpleCounter.js"></script>
+</body>
+</html>
